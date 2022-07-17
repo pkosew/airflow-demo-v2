@@ -46,3 +46,11 @@ const customOptions = {
 L.circleMarker([lat, lng])
   .bindPopup(customPopup, customOptions)
   .addTo(map);
+
+L.geoJSON(data, {
+  style: function (feature) {
+    return {color: feature.properties.color};
+  }
+}).bindPopup(function (layer) {
+    return layer.feature.properties.description;
+}).addTo(map);
