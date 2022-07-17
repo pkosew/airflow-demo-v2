@@ -1,4 +1,4 @@
-export var dbImg = {
+var dbImg = {
   "type": "FeatureCollection",
   "features": [
     {
