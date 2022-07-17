@@ -50,7 +50,7 @@
       };
       L.geoJSON(dbImg2, {
         pointToLayer: function (feature, latlng) {
-			    return L.marker(latlng, {icon: baseballIcon});
+			    return L.circleMarker(latlng);
 		    }
       }).addTo(map);
     </script>
