@@ -5,7 +5,7 @@ export var dbImg = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [52.232292, 21.0253077]
+        "coordinates": [21.0253077, 52.232292]
       },
       "properties": {
         "color": "#6495ED",
@@ -16,7 +16,7 @@ export var dbImg = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [52.2371472, 21.0648327]
+        "coordinates": [21.0648327, 52.2371472]
       },
       "properties": {
         "color": "#6495ED",
@@ -27,22 +27,8 @@ export var dbImg = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [52.2244253, 21.0634594]
+        "coordinates": [21.0634594, 52.2244253]
       },
-      "properties": {
-        "color": "#6495ED",
-        "description": "third point"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [52.2244253, 21.0634594],
-                    [52.2371472, 21.0648327]
-                ]
-            },
       "properties": {
         "color": "#6495ED",
         "description": "third point"
