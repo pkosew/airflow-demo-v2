@@ -20,6 +20,7 @@ const map = L.map("map", config).setView([lat, lng], zoom);
 // Used to load and display tile layers on the map
 // Most tile servers require attribution, which you can set under `Layer`
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  foo: 'bar',
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
@@ -42,6 +43,6 @@ const customOptions = {
 };
 
 // create marker object, pass custom icon as option, pass content and options to popup, add to map
-L.marker([lat, lng])
+L.circleMarker([lat, lng])
   .bindPopup(customPopup, customOptions)
   .addTo(map);
