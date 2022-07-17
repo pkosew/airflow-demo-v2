@@ -48,7 +48,11 @@
           "coordinates": [52.2320424, 21.0246855]
         }
       };
-      L.geoJSON(dbImg2).addTo(map);
+      L.geoJSON(dbImg2, {
+        pointToLayer: function (feature, latlng) {
+			    return L.marker(latlng, {icon: baseballIcon});
+		    }
+      }).addTo(map);
     </script>
   </body>
 
