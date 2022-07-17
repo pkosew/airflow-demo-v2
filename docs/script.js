@@ -3,7 +3,7 @@
  * Custom marker and popup
  */
 
-import { dbImg } from './db_img.js';
+// import { dbImg } from './db_img.js';
 
 // config map
 let config = {
@@ -49,7 +49,7 @@ L.circleMarker([lat, lng])
   .bindPopup(customPopup, customOptions)
   .addTo(map);
 
-L.geoJSON(dbImg).addTo(map);
+// L.geoJSON(dbImg).addTo(map);
 
 var dbImg2 = {
   "type": "FeatureCollection",
