@@ -24,8 +24,8 @@
       // magnification with which the map will start
       const zoom = 15;
       // co-ordinates
-      const lat = -104.99404;
-      const lng = 39.75621;
+      const lat = 52.232292;
+      const lng = 21.0253077;
 
       // calling map
       var map = L.map("map", config).setView([lat, lng], zoom);
@@ -48,7 +48,23 @@
 		      "coordinates": [52.232292, 21.0253077]
 	      }
       };
-      L.geoJSON(dbImg2, {
+	var dbImg2 = {
+	      "type": "Feature",
+	      "geometry": {
+			"type": "Polygon",
+			"coordinates": [
+			    [21.0634594, 52.2244253],
+			    [21.0648327, 52.2371472],
+			    [21.0253077, 52.232292]
+			]
+		    },
+	      "properties": {
+		"color": "#6495ED",
+		"description": "third point"
+	      }
+
+	}
+      L.geoJSON(dbImg2,{
         pointToLayer: function (feature, latlng) {
 			    return L.circleMarker(latlng);
 		    }
