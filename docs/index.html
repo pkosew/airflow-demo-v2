@@ -40,7 +40,7 @@
 
 	function onEachFeature(feature, layer) {
 	    if (feature.properties && feature.properties.popupContent) {
-		layer.bindPopup('<p>name: '+feature.properties.color+'</p><p>name: '+feature.properties.description+'</p>');
+		layer.bindPopup('<p>name: '+feature.properties.color+'</p><p>description: '+feature.properties.description+'</p>');
 	    }
 	}
 	    
