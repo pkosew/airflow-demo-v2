@@ -51,8 +51,8 @@
 	      onEachFeature: onEachFeature
       }).setStyle(function(feature) {
 	      return {
-		      fillColor: getColor(feature.properties.color),
-		      color: getColor(feature.properties.color)
+		      fillColor: feature.properties.color,
+		      color: feature.properties.color
 	      }
       }).addTo(map);
 
