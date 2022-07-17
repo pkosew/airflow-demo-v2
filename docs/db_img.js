@@ -9,7 +9,7 @@ var dbImg = {
       },
       "properties": {
         "color": "#6495ED",
-        "description": "first point"
+        "popupContent": "first point"
       }
     },
     {
@@ -20,7 +20,7 @@ var dbImg = {
       },
       "properties": {
         "color": "#6495ED",
-        "description": "second point"
+        "popupContent": "second point"
       }
     },
     {
@@ -30,8 +30,8 @@ var dbImg = {
         "coordinates": [21.0634594, 52.2244253]
       },
       "properties": {
-        "color": "#6495ED",
-        "description": "third point"
+        "color": "#111111",
+        "popupContent": "third point"
       }
     }
   ]
