@@ -39,7 +39,7 @@
       }).addTo(map);
 
 	function onEachFeature(feature, layer) {
-	    if (feature.properties && feature.properties.popupContent) {
+	    if (feature.properties && feature.properties.description) {
 		layer.bindPopup('<p>name: '+feature.properties.color+'</p><p>description: '+feature.properties.description+'</p>');
 	    }
 	}
