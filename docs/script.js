@@ -3,6 +3,8 @@
  * Custom marker and popup
  */
 
+import { dbImg } from './db_img.js';
+
 // config map
 let config = {
   minZoom: 7,
@@ -47,7 +49,7 @@ L.circleMarker([lat, lng])
   .bindPopup(customPopup, customOptions)
   .addTo(map);
 
-L.geoJSON(data, {
+L.geoJSON(dbImg, {
   style: function (feature) {
     return {color: feature.properties.color};
   }
