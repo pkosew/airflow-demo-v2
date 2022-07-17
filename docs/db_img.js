@@ -33,6 +33,20 @@ export var dbImg = {
         "color": "#6495ED",
         "description": "third point"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [52.2244253, 21.0634594],
+                    [52.2371472, 21.0648327]
+                ]
+            },
+      "properties": {
+        "color": "#6495ED",
+        "description": "third point"
+      }
     }
   ]
 }
