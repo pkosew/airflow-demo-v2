@@ -50,3 +50,25 @@ L.circleMarker([lat, lng])
   .addTo(map);
 
 L.geoJSON(dbImg).addTo(map);
+
+var dbImg2 = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [52.2244253, 21.0634594],
+                    [52.2371472, 21.0648327],
+                    [52.232292, 21.0253077]
+                ]
+            },
+      "properties": {
+        "color": "#6495ED",
+        "description": "third point"
+      }
+    }
+  ]
+}
+L.geoJSON(dbImg2).addTo(map);
